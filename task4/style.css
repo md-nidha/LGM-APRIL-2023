@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    transition: all 0.5s ease;
+}
+
+body {
+    background-position: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container {
+    height: 85vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.calculator {
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px 5px #696969;
+}
+
+#display {
+    margin: 0 10px;
+    height: 150px;
+    width: auto;
+    max-width: 270px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: #d3d3d373;
+    border-width: 4px;
+    border-style: dotted;
+    border-color: black;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    overflow-x: scroll;
+}
+
+#display::-webkit-scrollbar {
+    display: block;
+    height: 4px;
+}
+
+button {
+    height: 60px;
+    width: 60px;
+    font-family: "Montserrat", sans-serif;
+    border: 0;
+    border-radius: 30px;
+    margin: 5px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+button#equal {
+    height: 130px;
+}
+
+.calculator {
+    min-height: 10vh;
+}
+
+.calculator #display {
+    color: black;
+}
+
+.calculator button#clear {
+    background-color: #5eaca5;
+    color: #f8fafb;
+}
+
+.calculator button.btn-number {
+    background-color: rgb(190, 189, 189);
+    color: black;
+    font-family: "Montserrat", sans-serif;
+}
+
+.calculator button.btn-operator {
+    background-color: black;
+    color: white;
+}
+
+.calculator button.btn-equal {
+    background-color: #223323;
+    color: #ffffff;
+}
+
+header {
+    opacity: 0.8;
+    box-shadow: 0 0 10px 5px #000000ad;
+    display: flex;
+    align-items: center;
+    padding: 15px 10%;
+}
+
+.logo-text a,
+.cta {
+    font-family: "Montserrat", sans-serif;
+    opacity: 0.8;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer {
+    background: transparent;
+    opacity: 0.8;
+    padding: 30px 25px;
+    color: #0a0a0a;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: "Montserrat", sans-serif;
+    margin-top: auto;
+    font-weight: 500;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer span a {
+    color: rgb(31, 31, 31);
+    text-decoration: none;
+}
+
+footer span a:hover {
+    color: rgb(201, 20, 29);
+}
